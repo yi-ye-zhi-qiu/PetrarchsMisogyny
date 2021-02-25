@@ -9,6 +9,10 @@ Requires:
 class bcolors:
     OKBLUE = '\033[94m'
     ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    OKCYAN = '\033[96m'
+
 
 print(bcolors.OKBLUE + "Starting program" + bcolors.ENDC)
 
@@ -114,6 +118,6 @@ end_arr = pd.DataFrame(end_arr, columns=['word', 'count'])
 print(end_arr.head())
 
 print(bcolors.OKBLUE + 'Saved Metadata-change-file-extension-to-tsv.csv' + bcolors.ENDC)
-
+print(bcolors.BOLD + bcolors.UNDERLINE + bcolors.OKBLUE + 'Please dont forget to change Metadata-change-file-extension-to-tsv.csv to Metadata-change-file-extension-to-tsv.tsv' + bcolors.ENDC)
 x = "\t"
 end_arr.to_csv('data/poetry/Metadata-change-file-extension-to-tsv.csv', sep='\t', index=False)
