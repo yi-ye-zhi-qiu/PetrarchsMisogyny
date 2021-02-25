@@ -24,7 +24,7 @@ nltk.download('stopwords')
 
 
 #Read in text as list of lists, each line is considered a document
-df = pd.read_csv('/Users/liamisaacs/Desktop/github repositories/metis-project4/data/poetry/raw.txt')
+df = pd.read_csv('data/poetry/raw.txt')
 df = df.values.tolist()
 print('Snippet of df: ', df[0:2])
 
@@ -81,7 +81,7 @@ neww_X=np.dot(X,new_vectors)
 
 #Save PCA
 
-np.savetxt("/Users/liamisaacs/Desktop/github repositories/metis-project4/data/poetry/PCA-checkpoint.tsv", neww_X, delimiter='\t')
+np.savetxt("data/poetry/PCA-checkpoint.tsv", neww_X, delimiter='\t')
 print(bcolors.OKBLUE + 'Saved PCA-checkpoint.tsv' + bcolors.ENDC)
 
 # ============ METADATA ============== #
@@ -116,4 +116,4 @@ print(end_arr.head())
 print(bcolors.OKBLUE + 'Saved Metadata-change-file-extension-to-tsv.csv' + bcolors.ENDC)
 
 x = "\t"
-end_arr.to_csv('/Users/liamisaacs/Desktop/github repositories/metis-project4/data/poetry/Metadata-change-file-extension-to-tsv.csv', sep='\t', index=False)
+end_arr.to_csv('data/poetry/Metadata-change-file-extension-to-tsv.csv', sep='\t', index=False)
