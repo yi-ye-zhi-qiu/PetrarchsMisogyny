@@ -25,6 +25,10 @@ Requirements to run locally:
 
 Steps to reproduce:
 
+As a notebook:
+- Run the [collab notebook](poemgenerator.ipynb)
+
+As python files:
 - Clone this repository or download the relevant code
 - Run `step1-poemretriever.py`
 - Run `step2-pcaandmetadata.py`
