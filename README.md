@@ -4,7 +4,7 @@
 
 ![Metis logo](metis.png) Metis data-science bootcamp project 4, **Feb. 11 - Feb 24 2021**
 
-** [See the final product](http://34.212.100.77/petrarch) **
+** [See the final product](http://liamisaacs.com/petrarch) **
 ** Project was presented, [slides used](finalpresentation.pdf) **
 
 ----
